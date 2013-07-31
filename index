@@ -4,4 +4,25 @@ nginx-deploy-page http://jorgen.evens.eu/heroku/nginx-deploy-page/nginx-deploy-p
 nginx http://jorgen.evens.eu/heroku/nginx/nginx.sh # Provides an unconfigured NGINX server.
 nginx-php5 http://jorgen.evens.eu/heroku/nginx-php5/nginx-php5.sh # PHP5-FPM integration with NGINX
 pcre http://jorgen.evens.eu/heroku/pcre/pcre.sh # libpcre 8.33
+php5-fpm-curl http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-curl.sh
+php5-fpm-dom http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-dom.sh
+php5-fpm-gd http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gd.sh
+php5-fpm-gettext http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gettext.sh
 php5-fpm http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm.sh # PHP5-FPM without any configuration applied
+php5-fpm-iconv http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-iconv.sh
+php5-fpm-json http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-json.sh
+php5-fpm-mcrypt http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mcrypt.sh
+php5-fpm-mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysql.sh
+php5-fpm-mysqli http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysqli.sh
+php5-fpm-opcache http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-opcache.sh
+php5-fpm-pdo http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo.sh
+php5-fpm-pdo_mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_mysql.sh
+php5-fpm-pdo_sqlite http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_sqlite.sh
+php5-fpm-pgsql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pgsql.sh
+php5-fpm-soap http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-soap.sh
+php5-fpm-sqlite3 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-sqlite3.sh
+php5-fpm-tidy http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-tidy.sh
+php5-fpm-wddx http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-wddx.sh
+php5-fpm-xml http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xml.sh
+php5-fpm-xmlreader http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xmlreader.sh
+php5-fpm-zip http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-zip.sh

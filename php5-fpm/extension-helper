@@ -1,0 +1,54 @@
+#!/bin/sh
+
+PHP5EXT_VERSION="5.5.1"
+PHP5EXT_HOST="http://jorgen.evens.eu/heroku/php5-fpm"
+
+php5ext_compile() {
+	local extension
+	extension="$1"
+	BINARIES="${CACHE_DIR}/php5-fpm-${extension}-${PHP5EXT_VERSION}.tar.gz"
+
+	php5ext_download "${BINARIES}"
+	php5ext_install "${BINARIES}"
+	php5ext_enable "${extension}"
+}
+
+php5ext_download() {
+	TARGET=$1
+	HOST=$PHP5EXT_HOST
+	URL="${HOST}/$(basename $TARGET)"
+
+	print_action "Checking cache for $TARGET"
+	if [ ! -f "$TARGET" ]; then
+		print_action "Downloading PHP5 extension $(basename $TARGET) from ${URL} to ${TARGET}"
+		download "${URL}" "${TARGET}"
+	fi
+	if [ ! -f "$TARGET" ]; then
+		print "Unable to download the package"
+		exit 1
+	fi
+}
+
+php5ext_install() {
+	print_action "Installing PHP5 extension $(basename $1) to ${BUILD_DIR}/vendor"
+
+	mkdir -p "${BUILD_DIR}/vendor"
+
+	CUR_DIR=`pwd`
+
+	cd "${BUILD_DIR}/vendor"
+
+	tar -xf "${BINARIES}"
+
+	cd "${CUR_DIR}"
+}
+
+php5ext_enable() {
+	local config
+	config="${BUILD_DIR}/vendor/php5-fpm/etc/php.ini"
+
+	if [ ! -f "$config" ]; then 
+		echo "[PHP]" >> "$config"
+	fi
+	echo "extension=$1.so" >> "$config"
+}

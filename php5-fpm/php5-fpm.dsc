@@ -67,3 +67,24 @@ These configure options were used:
 --enable-shared
 --enable-dom=shared
 --enable-xmlreader=shared
+
+use following snippet to generate .tar.gz archives from the files in extensions
+
+for line in `ls extensions | grep -o '[^\.]\+\.' | sort | uniq | tr -d '.'`; do
+cp -R ext-base ${line}
+cp extensions/${line}.* ${line}/lib/php/20121212
+mkdir tmp 2> /dev/null
+mv ${line} tmp/
+cd tmp
+mv ${line} php5-fpm
+tar -caf php5-fpm-${line}-5.5.1.tar.gz php5-fpm
+mv *.tar.gz ..
+cd ..
+rm -R tmp
+done;
+
+use following snippet to generate shell scripts from tar.gz extensions
+
+for line in `ls *.tar.gz | cut -d"-" -f3`; do
+sed "s/ext_placeholder/$line/g" extension_placeholder > php5-fpm-$line.sh
+done
