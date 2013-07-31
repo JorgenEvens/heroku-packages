@@ -1,0 +1,21 @@
+#!/bin/sh
+
+HOST="http://jorgen.evens.eu/heroku"
+if [ ! -z $1 ]; then
+	HOST="$1"
+fi
+
+for package in `ls */*.sh`; do
+	installer=$(basename "$package")
+	dir=$(basename $(dirname "$package"))
+	name=$(echo $installer | grep -o '.\+[^\.sh]')
+
+	line="$name ${HOST}/${dir}/${installer}"
+	if [ -f "$dir/$name.dsc" ]; then
+		description=$(head -n 1 "$dir/$name.dsc" 2> /dev/null)
+		line="$line # $description"
+	fi
+
+	echo $line
+done
+

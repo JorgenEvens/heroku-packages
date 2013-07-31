@@ -1,0 +1,1 @@
+Provides information of the running NGINX instance.

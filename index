@@ -1,0 +1,7 @@
+libmcrypt http://jorgen.evens.eu/heroku/libmcrypt/libmcrypt.sh
+libtidy http://jorgen.evens.eu/heroku/libtidy/libtidy.sh
+nginx-deploy-page http://jorgen.evens.eu/heroku/nginx-deploy-page/nginx-deploy-page.sh # Provides information of the running NGINX instance.
+nginx http://jorgen.evens.eu/heroku/nginx/nginx.sh # Provides an unconfigured NGINX server.
+nginx-php5 http://jorgen.evens.eu/heroku/nginx-php5/nginx-php5.sh # PHP5-FPM integration with NGINX
+pcre http://jorgen.evens.eu/heroku/pcre/pcre.sh # libpcre 8.33
+php5-fpm http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm.sh # PHP5-FPM without any configuration applied
