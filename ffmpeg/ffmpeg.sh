@@ -44,6 +44,7 @@ ffmpeg_install() {
 
 ffmpeg_generate_profile() {
 	echo "export PATH=\"\$PATH:/app/vendor/ffmpeg/bin\"" >> "${BUILD_DIR}/.profile"
+	echo "export LD_LIBRARY_PATH=\"\$LD_LIBRARY_PATH:/app/vendor/ffmpeg/lib\"" >> "${BUILD_DIR}/.profile"
 }
 
 ffmpeg_compile
