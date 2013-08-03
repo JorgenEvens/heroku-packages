@@ -6,10 +6,6 @@ WKHTMLTOPDF_HOST="http://bubobox.deploy.s3.amazonaws.com/heroku/wkhtmltopdf"
 wkhtmltopdf_compile() {	
 	BINARIES="${CACHE_DIR}/wkhtmltopdf-${WKHTMLTOPDF_VERSION}.tar.gz"
 
-	# bust cache 
-	print_action "Bust cache"
-	rm /app/tmp/repo.git/.cache/wkhtmltopdf-0.10.0.rc2.tar.gz
-
 	wkhtmltopdf_download "${BINARIES}"
 	wkhtmltopdf_install "${BINARIES}"
 	wkhtmltopdf_generate_profile
