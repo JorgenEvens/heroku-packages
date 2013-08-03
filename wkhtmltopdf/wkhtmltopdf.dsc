@@ -1,4 +1,4 @@
-Simple shell utility to convert html to pdf using the webkit rendering engine, and qt.
+Simple shell utility to convert html to pdf using the webkit rendering engine, and qt
 
 PHP Example:
 exec('/app/vendor/wkhtmltopdf http://google.com /app/src/test.pdf');
