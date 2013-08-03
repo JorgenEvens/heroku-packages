@@ -1,7 +1,7 @@
 #!/bin/sh
 
 WKHTMLTOPDF_VERSION="0.10.0.rc2"
-WKHTMLTOPDF_HOST="https://raw.github.com/Sitebase/heroku-packages/master/wkhtmltopdf"
+WKHTMLTOPDF_HOST="http://bubobox.deploy.s3.amazonaws.com/heroku/wkhtmltopdf"
 
 wkhtmltopdf_compile() {	
 	BINARIES="${CACHE_DIR}/wkhtmltopdf-${WKHTMLTOPDF_VERSION}.tar.gz"
