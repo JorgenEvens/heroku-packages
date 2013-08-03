@@ -28,3 +28,4 @@ php5-fpm-xml https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/
 php5-fpm-xmlreader https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-xmlreader.sh
 php5-fpm-zip https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-zip.sh
 php5-fpm https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm.sh # PHP5-FPM without any configuration applied
+wkhtmltopdf https://raw.github.com/JorgenEvens/heroku-packages/master/wkhtmltopdf/wkhtmltopdf.sh # Simple shell utility to convert html to pdf using the webkit rendering engine, and qt
