@@ -1,30 +1,30 @@
-libmcrypt https://raw.github.com/Sitebase/heroku-packages/master/libmcrypt/libmcrypt.sh
-libtidy https://raw.github.com/Sitebase/heroku-packages/master/libtidy/libtidy.sh
-nginx-deploy-page https://raw.github.com/Sitebase/heroku-packages/master/nginx-deploy-page/nginx-deploy-page.sh # Provides information of the running NGINX instance.
-nginx https://raw.github.com/Sitebase/heroku-packages/master/nginx/nginx.sh # Provides an unconfigured NGINX server.
-nginx-php5 https://raw.github.com/Sitebase/heroku-packages/master/nginx-php5/nginx-php5.sh # PHP5-FPM integration with NGINX
-pcre https://raw.github.com/Sitebase/heroku-packages/master/pcre/pcre.sh # libpcre 8.33
-php5-fpm-curl https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-curl.sh
-php5-fpm-dom https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-dom.sh
-php5-fpm-gd https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-gd.sh
-php5-fpm-gettext https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-gettext.sh
-php5-fpm https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm.sh # PHP5-FPM without any configuration applied
-php5-fpm-iconv https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-iconv.sh
-php5-fpm-json https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-json.sh
-php5-fpm-mcrypt https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-mcrypt.sh
-php5-fpm-mysql https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-mysql.sh
-php5-fpm-mysqli https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-mysqli.sh
-php5-fpm-opcache https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-opcache.sh
-php5-fpm-pdo https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-pdo.sh
-php5-fpm-pdo_mysql https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-pdo_mysql.sh
-php5-fpm-pdo_sqlite https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-pdo_sqlite.sh
-php5-fpm-pgsql https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-pgsql.sh
-php5-fpm-soap https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-soap.sh
-php5-fpm-sqlite3 https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-sqlite3.sh
-php5-fpm-tidy https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-tidy.sh
-php5-fpm-wddx https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-wddx.sh
-php5-fpm-xml https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-xml.sh
-php5-fpm-xmlreader https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-xmlreader.sh
-php5-fpm-zip https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-zip.sh
-php5-fpm-apcu https://raw.github.com/Sitebase/heroku-packages/master/php5-fpm/php5-fpm-apcu.sh
-ffmpeg https://raw.github.com/Sitebase/heroku-packages/master/ffmpeg/ffmpeg.sh
+ffmpeg https://raw.github.com/JorgenEvens/heroku-packages/master/ffmpeg/ffmpeg.sh
+libmcrypt https://raw.github.com/JorgenEvens/heroku-packages/master/libmcrypt/libmcrypt.sh
+libtidy https://raw.github.com/JorgenEvens/heroku-packages/master/libtidy/libtidy.sh
+nginx-deploy-page https://raw.github.com/JorgenEvens/heroku-packages/master/nginx-deploy-page/nginx-deploy-page.sh # Provides information of the running NGINX instance.
+nginx-php5 https://raw.github.com/JorgenEvens/heroku-packages/master/nginx-php5/nginx-php5.sh # PHP5-FPM integration with NGINX
+nginx https://raw.github.com/JorgenEvens/heroku-packages/master/nginx/nginx.sh # Provides an unconfigured NGINX server.
+pcre https://raw.github.com/JorgenEvens/heroku-packages/master/pcre/pcre.sh # libpcre 8.33
+php5-fpm-apcu https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-apcu.sh
+php5-fpm-curl https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-curl.sh
+php5-fpm-dom https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-dom.sh
+php5-fpm-gd https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-gd.sh
+php5-fpm-gettext https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-gettext.sh
+php5-fpm-iconv https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-iconv.sh
+php5-fpm-json https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-json.sh
+php5-fpm-mcrypt https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-mcrypt.sh
+php5-fpm-mysql https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-mysql.sh
+php5-fpm-mysqli https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-mysqli.sh
+php5-fpm-opcache https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-opcache.sh
+php5-fpm-pdo https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-pdo.sh
+php5-fpm-pdo_mysql https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-pdo_mysql.sh
+php5-fpm-pdo_sqlite https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-pdo_sqlite.sh
+php5-fpm-pgsql https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-pgsql.sh
+php5-fpm-soap https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-soap.sh
+php5-fpm-sqlite3 https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-sqlite3.sh
+php5-fpm-tidy https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-tidy.sh
+php5-fpm-wddx https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-wddx.sh
+php5-fpm-xml https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-xml.sh
+php5-fpm-xmlreader https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-xmlreader.sh
+php5-fpm-zip https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm-zip.sh
+php5-fpm https://raw.github.com/JorgenEvens/heroku-packages/master/php5-fpm/php5-fpm.sh # PHP5-FPM without any configuration applied
