@@ -9,8 +9,9 @@ for package in `ls */*.sh`; do
 	installer=$(basename "$package")
 	dir=$(basename $(dirname "$package"))
 	name=$(echo $installer | grep -o '.\+[^\.sh]')
+	md5=$(md5sum "$package" | cut -d" " -f1)
 
-	line="$name ${HOST}/${dir}/${installer}"
+	line="$name ${HOST}/${dir}/${installer} ${md5}"
 	if [ -f "$dir/$name.dsc" ]; then
 		description=$(head -n 1 "$dir/$name.dsc" 2> /dev/null)
 		line="$line # $description"
