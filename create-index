@@ -8,7 +8,7 @@ fi
 for package in `ls */*.sh`; do
 	installer=$(basename "$package")
 	dir=$(basename $(dirname "$package"))
-	name=$(echo $installer | grep -o '.\+[^\.sh]')
+	name=$(echo $installer | sed 's/\.sh$//g')
 	md5=$(md5sum "$package" | cut -d" " -f1)
 
 	line="$name ${HOST}/${dir}/${installer} ${md5}"
