@@ -1,32 +1,33 @@
-ffmpeg https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/ffmpeg/ffmpeg.sh 18726e008cc187b807fd4a847284ee1f
-libmcrypt https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/libmcrypt/libmcrypt.sh 508d19e14e9fc760d16122d0497dadd8
-libtidy https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/libtidy/libtidy.sh 351e778e82c71ebcc3236039ca9c0ba0
-nginx-deploy-page https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx-deploy-page/nginx-deploy-page.sh 9bbb050c6bba8c7ad8f738ef056088ae # Provides information of the running NGINX instance.
-nginx https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx/nginx.sh 696aed37bbb258a4bfb1b261fee4c929 # Provides an unconfigured NGINX server.
-nginx-php5 https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx-php5/nginx-php5.sh 73e4c8b92018eeffe2525493449272bd # PHP5-FPM integration with NGINX
-nodejs https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nodejs/nodejs.sh bb8f91230e9c022f2ef1cd93600e9d25 # Provides a node installing, including npm
-pcre https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/pcre/pcre.sh ff53e4a7185a9897da8aa2b535edbd78 # libpcre 8.33
-php5-fpm-apcu https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-apcu.sh 991a4e1f06eeb50006f6f6ad0b0cc77d
-php5-fpm-curl https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-curl.sh a43c2e30f2507cabf764517c4095d7e7
-php5-fpm-dom https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-dom.sh c4974797cb138e8f591f8e1259735d12
-php5-fpm-gd https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-gd.sh 237257d02607033bd2b1552d1153f361
-php5-fpm-gettext https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-gettext.sh 96060556cce703879096b8f1fa9e8854
-php5-fpm-iconv https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-iconv.sh d671d69f4226888526250dfb918db5db
-php5-fpm-json https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-json.sh 94ffa76a58be7f9c3ed32b4c1cda9c3c
-php5-fpm-mcrypt https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-mcrypt.sh 4b1ed1ad31fa2cf1f96bf4bb0ffbf7f0
-php5-fpm-mysqli https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-mysqli.sh 20b464262d7cdbf63744b89fd5d9d330
-php5-fpm-mysql https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-mysql.sh b525d375ce162fddd8f323d71526ff98
-php5-fpm-opcache https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-opcache.sh 62c12ae0a51641031018ef783c81aecd
-php5-fpm-pdo_mysql https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-pdo_mysql.sh e5c8e2785f727ac0eb424ddcf196846c
-php5-fpm-pdo https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-pdo.sh 202d8cce64a70037b9ae1a3809de2c04
-php5-fpm-pdo_sqlite https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-pdo_sqlite.sh 054ed0e078346ec95f7f21a3cbf48640
-php5-fpm-pgsql https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-pgsql.sh 0b154d6795ebab811b85b998a7f04469
-php5-fpm https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm.sh ab653b2b2530b51ff2b4276c068b1a0d # PHP5-FPM without any configuration applied
-php5-fpm-soap https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-soap.sh 901206b9fe2f1cc6654208ab7917a197
-php5-fpm-sqlite3 https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-sqlite3.sh ffd92155bda69134f646df478341679d
-php5-fpm-tidy https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-tidy.sh 2bdaacbf3218f1a622a0aa33c2f93fd2
-php5-fpm-wddx https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-wddx.sh ad7af2da9fd12b4ae2a67e6613b7d6ea
-php5-fpm-xmlreader https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-xmlreader.sh b7b413eeb7f4214a7a8e9e7e4cc02b3d
-php5-fpm-xml https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-xml.sh faf9a83ac12463faeb06619c4707f883
-php5-fpm-zip https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-zip.sh 91f2c20953529e8c277449d3326dea1d
-wkhtmltopdf https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/wkhtmltopdf/wkhtmltopdf.sh 5181067eee2feda1bb7d409025e90efb # Simple shell utility to convert html to pdf using the webkit rendering engine, and qt
+ffmpeg http://jorgen.evens.eu/heroku/ffmpeg/ffmpeg.sh 18726e008cc187b807fd4a847284ee1f
+libmcrypt http://jorgen.evens.eu/heroku/libmcrypt/libmcrypt.sh 508d19e14e9fc760d16122d0497dadd8
+libtidy http://jorgen.evens.eu/heroku/libtidy/libtidy.sh 351e778e82c71ebcc3236039ca9c0ba0
+nginx-deploy-page http://jorgen.evens.eu/heroku/nginx-deploy-page/nginx-deploy-page.sh 9bbb050c6bba8c7ad8f738ef056088ae # Provides information of the running NGINX instance.
+nginx-rtmp http://jorgen.evens.eu/heroku/nginx/nginx-rtmp.sh d866eb0fd9ff8de078621e32bcf65aff # Provides an unconfigured NGINX server with rtmp-module built in.
+nginx http://jorgen.evens.eu/heroku/nginx/nginx.sh 696aed37bbb258a4bfb1b261fee4c929 # Provides an unconfigured NGINX server.
+nginx-php5 http://jorgen.evens.eu/heroku/nginx-php5/nginx-php5.sh 73e4c8b92018eeffe2525493449272bd # PHP5-FPM integration with NGINX
+nodejs http://jorgen.evens.eu/heroku/nodejs/nodejs.sh bb8f91230e9c022f2ef1cd93600e9d25 # Provides a node installing, including npm
+pcre http://jorgen.evens.eu/heroku/pcre/pcre.sh ff53e4a7185a9897da8aa2b535edbd78 # libpcre 8.33
+php5-fpm-apcu http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-apcu.sh 991a4e1f06eeb50006f6f6ad0b0cc77d
+php5-fpm-curl http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-curl.sh a43c2e30f2507cabf764517c4095d7e7
+php5-fpm-dom http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-dom.sh c4974797cb138e8f591f8e1259735d12
+php5-fpm-gd http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gd.sh 237257d02607033bd2b1552d1153f361
+php5-fpm-gettext http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gettext.sh 96060556cce703879096b8f1fa9e8854
+php5-fpm-iconv http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-iconv.sh d671d69f4226888526250dfb918db5db
+php5-fpm-json http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-json.sh 94ffa76a58be7f9c3ed32b4c1cda9c3c
+php5-fpm-mcrypt http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mcrypt.sh 4b1ed1ad31fa2cf1f96bf4bb0ffbf7f0
+php5-fpm-mysqli http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysqli.sh 20b464262d7cdbf63744b89fd5d9d330
+php5-fpm-mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysql.sh b525d375ce162fddd8f323d71526ff98
+php5-fpm-opcache http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-opcache.sh 62c12ae0a51641031018ef783c81aecd
+php5-fpm-pdo_mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_mysql.sh e5c8e2785f727ac0eb424ddcf196846c
+php5-fpm-pdo http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo.sh 202d8cce64a70037b9ae1a3809de2c04
+php5-fpm-pdo_sqlite http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_sqlite.sh 054ed0e078346ec95f7f21a3cbf48640
+php5-fpm-pgsql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pgsql.sh 0b154d6795ebab811b85b998a7f04469
+php5-fpm http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm.sh ab653b2b2530b51ff2b4276c068b1a0d # PHP5-FPM without any configuration applied
+php5-fpm-soap http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-soap.sh 901206b9fe2f1cc6654208ab7917a197
+php5-fpm-sqlite3 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-sqlite3.sh ffd92155bda69134f646df478341679d
+php5-fpm-tidy http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-tidy.sh 2bdaacbf3218f1a622a0aa33c2f93fd2
+php5-fpm-wddx http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-wddx.sh ad7af2da9fd12b4ae2a67e6613b7d6ea
+php5-fpm-xmlreader http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xmlreader.sh b7b413eeb7f4214a7a8e9e7e4cc02b3d
+php5-fpm-xml http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xml.sh faf9a83ac12463faeb06619c4707f883
+php5-fpm-zip http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-zip.sh 91f2c20953529e8c277449d3326dea1d
+wkhtmltopdf http://jorgen.evens.eu/heroku/wkhtmltopdf/wkhtmltopdf.sh 5181067eee2feda1bb7d409025e90efb # Simple shell utility to convert html to pdf using the webkit rendering engine, and qt
