@@ -5,6 +5,8 @@ NGINXRTMP_HOST="http://jorgen.evens.eu/heroku/nginx"
 NGINXRTMP_MD5="4ccd4f75ae1421d5e80049e308c5b5e8"
 
 nginxrmtp_compile() {
+	dependency_require "pcre"
+
 	VERSION=$NGINXRTMP_VERSION
 	BINARIES="${CACHE_DIR}/nginx-rmtp-${VERSION}.tar.gz"
 
