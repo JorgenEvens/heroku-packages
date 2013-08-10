@@ -4,18 +4,18 @@ NGINXRTMP_VERSION="1.4.2"
 NGINXRTMP_HOST="http://jorgen.evens.eu/heroku/nginx"
 NGINXRTMP_MD5="4ccd4f75ae1421d5e80049e308c5b5e8"
 
-nginxrmtp_compile() {
+nginxrtmp_compile() {
 	dependency_require "pcre"
 
 	VERSION=$NGINXRTMP_VERSION
-	BINARIES="${CACHE_DIR}/nginx-rmtp-${VERSION}.tar.gz"
+	BINARIES="${CACHE_DIR}/nginx-rtmp-${VERSION}.tar.gz"
 
-	nginxrmtp_download "$BINARIES"
-	nginxrmtp_install "$BINARIES"
-	nginxrmtp_generate_boot
+	nginxrtmp_download "$BINARIES"
+	nginxrtmp_install "$BINARIES"
+	nginxrtmp_generate_boot
 }
 
-nginxrmtp_download() {
+nginxrtmp_download() {
 	TARGET=$1
 	HOST=$NGINXRTMP_HOST
 	URL="${HOST}/$(basename $TARGET)"
@@ -24,7 +24,7 @@ nginxrmtp_download() {
 	cached_download "$URL" "$TARGET" "${NGINXRTMP_MD5}"
 }
 
-nginxrmtp_install() {
+nginxrtmp_install() {
 	print_action "Installing Nginx with rtmp ${NGINXRTMP_VERSION} to ${BUILD_DIR}/vendor"
 
 	mkdir -p "${BUILD_DIR}/vendor"
@@ -49,10 +49,10 @@ nginxrmtp_install() {
 	cd "$CUR_DIR"
 }
 
-nginxrmtp_generate_boot() {
-	print_action "Generating boot portion for nginx-rmtp"
+nginxrtmp_generate_boot() {
+	print_action "Generating boot portion for nginx-rtmp"
 	echo 'sed -i "s/listen\s\+80;/listen $PORT;/g" "/app/vendor/nginx/conf/nginx.conf"' >> "${BUILD_DIR}/boot.sh"
 	echo "/app/vendor/nginx/sbin/nginx &" >> "${BUILD_DIR}/boot.sh"
 }
 
-nginxrmtp_compile
+nginxrtmp_compile
