@@ -2,7 +2,7 @@ ffmpeg https://raw.github.com/JorgenEvens/heroku-packages/master/ffmpeg/ffmpeg.s
 libmcrypt https://raw.github.com/JorgenEvens/heroku-packages/master/libmcrypt/libmcrypt.sh 508d19e14e9fc760d16122d0497dadd8
 libtidy https://raw.github.com/JorgenEvens/heroku-packages/master/libtidy/libtidy.sh 351e778e82c71ebcc3236039ca9c0ba0
 nginx-deploy-page https://raw.github.com/JorgenEvens/heroku-packages/master/nginx-deploy-page/nginx-deploy-page.sh 9bbb050c6bba8c7ad8f738ef056088ae # Provides information of the running NGINX instance.
-nginx-rtmp https://raw.github.com/JorgenEvens/heroku-packages/master/nginx/nginx-rtmp.sh 865c65d3f072127af60d11f6b2ef365c # Provides an unconfigured NGINX server with rtmp-module built in.
+nginx-rtmp https://raw.github.com/JorgenEvens/heroku-packages/master/nginx/nginx-rtmp.sh 79b4ad5b23a0a944fab6e11f144b8beb # Provides an unconfigured NGINX server with rtmp-module built in.
 nginx https://raw.github.com/JorgenEvens/heroku-packages/master/nginx/nginx.sh 696aed37bbb258a4bfb1b261fee4c929 # Provides an unconfigured NGINX server.
 nginx-php5 https://raw.github.com/JorgenEvens/heroku-packages/master/nginx-php5/nginx-php5.sh 73e4c8b92018eeffe2525493449272bd # PHP5-FPM integration with NGINX
 nodejs https://raw.github.com/JorgenEvens/heroku-packages/master/nodejs/nodejs.sh bb8f91230e9c022f2ef1cd93600e9d25 # Provides a node installing, including npm
