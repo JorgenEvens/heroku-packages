@@ -32,6 +32,7 @@ These configure options were used:
 --with-gettext=shared
 --enable-mbstring
 --with-pcre-regex=/app/vendor/pcre
+--with-pcre-dir=/app/vendor/pcre
 --disable-shmop
 --enable-sockets
 --enable-wddx=shared
@@ -77,7 +78,7 @@ mkdir tmp 2> /dev/null
 mv ${line} tmp/
 cd tmp
 mv ${line} php5-fpm
-tar -caf php5-fpm-${line}-5.5.1.tar.gz php5-fpm
+tar -caf php5-fpm-${line}-5.5.2.tar.gz php5-fpm
 mv *.tar.gz ..
 cd ..
 rm -R tmp
@@ -86,5 +87,5 @@ done;
 use following snippet to generate shell scripts from tar.gz extensions
 
 for line in `ls *.tar.gz | cut -d"-" -f3`; do
-sed "s/ext_placeholder/$line/g" extension_placeholder > php5-fpm-$line.sh
+sed "s/ext_placeholder/$line/g" extension_template > php5-fpm-$line.sh
 done

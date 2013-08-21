@@ -8,5 +8,3 @@ fi
 
 dependency_require "php5-fpm"
 php5ext_compile "opcache"
-
-sed -i 's/extension=opcache\.so/zend_extension=opcache\.so/g' "${BUILD_DIR}/vendor/php5-fpm/etc/php.ini"
