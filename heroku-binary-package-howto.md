@@ -57,6 +57,26 @@ enter base/heroku
 
 ### Sync packages
 
+We will be setting up the correct apt repositories first, these ensure that we are working with the exact same packages as used by heroku.
+
+```shell
+cat >> /etc/apt/sources.list << EOF
+deb http://archive.ubuntu.com/ubuntu lucid main
+deb http://archive.ubuntu.com/ubuntu lucid-security main
+deb http://archive.ubuntu.com/ubuntu lucid-updates main
+deb http://archive.ubuntu.com/ubuntu lucid universe
+deb http://apt.postgresql.org/pub/repos/apt/ lucid-pgdg main
+EOF
+
+wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
+```
+
+If you want to check if these are still valid you can check using following command
+
+```shell
+heroku run "cat /etc/apt/sources.list"
+```
+
 Retrieve a list of packages that are currently being used by heroku.
 ```shell
 heroku run "dpkg --get-selections | grep -v deinstall | cut -f1" -a empty-app | grep -v -P '^Running' > heroku-packages
@@ -137,5 +157,4 @@ Packaging up the build you just did is as simple as:
 cd /app/vendor
 tar -caf my-app.tar.gz my-app
 ```
-
 
