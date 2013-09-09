@@ -1,4 +1,5 @@
 ffmpeg http://jorgen.evens.eu/heroku/ffmpeg/ffmpeg.sh 18726e008cc187b807fd4a847284ee1f # ./configure
+imagemagick http://jorgen.evens.eu/heroku/imagemagick/imagemagick.sh 3e0d472da0208b7176b00a317696cad3 # Shell version of imagemagick
 libmcrypt http://jorgen.evens.eu/heroku/libmcrypt/libmcrypt.sh 508d19e14e9fc760d16122d0497dadd8
 libtidy http://jorgen.evens.eu/heroku/libtidy/libtidy.sh 351e778e82c71ebcc3236039ca9c0ba0
 mediainfo http://jorgen.evens.eu/heroku/mediainfo/mediainfo.sh 531f1502de044fcecff877ca3cdb1441 # Shell utility to extract information about different kinds of media.
