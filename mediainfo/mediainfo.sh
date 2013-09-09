@@ -1,7 +1,7 @@
 #!/bin/sh
 
 MEDIAINFO_VERSION="0.7.64"
-MEDIAINFO_HOST="https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/mediainfo/"
+MEDIAINFO_HOST="http://jorgen.evens.eu/heroku/mediainfo"
 MEDIAINFO_MD5="bbe753a2ac3d43254be5abd0c62bd2fb"
 
 mediainfo_compile() {
