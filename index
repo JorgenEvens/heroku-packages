@@ -1,34 +1,37 @@
-ffmpeg http://jorgen.evens.eu/heroku/ffmpeg/ffmpeg.sh 18726e008cc187b807fd4a847284ee1f
+ffmpeg http://jorgen.evens.eu/heroku/ffmpeg/ffmpeg.sh 18726e008cc187b807fd4a847284ee1f # ./configure
+imagemagick http://jorgen.evens.eu/heroku/imagemagick/imagemagick.sh 3e0d472da0208b7176b00a317696cad3 # Shell version of imagemagick
 libmcrypt http://jorgen.evens.eu/heroku/libmcrypt/libmcrypt.sh 508d19e14e9fc760d16122d0497dadd8
 libtidy http://jorgen.evens.eu/heroku/libtidy/libtidy.sh 351e778e82c71ebcc3236039ca9c0ba0
+mediainfo http://jorgen.evens.eu/heroku/mediainfo/mediainfo.sh 531f1502de044fcecff877ca3cdb1441 # Shell utility to extract information about different kinds of media.
 newrelic-php5 http://jorgen.evens.eu/heroku/newrelic/newrelic-php5.sh b7945b7c1ce054547388473c164f1234 # New Relic server monitoring for PHP5-FPM
 nginx-deploy-page http://jorgen.evens.eu/heroku/nginx-deploy-page/nginx-deploy-page.sh 9bbb050c6bba8c7ad8f738ef056088ae # Provides information of the running NGINX instance.
+nginx-extras1 http://jorgen.evens.eu/heroku/nginx/nginx-extras1.sh adf3b90027fc1f334292b327019e9866 # Provides an unconfigured NGINX server with some extra modules.
 nginx-rtmp http://jorgen.evens.eu/heroku/nginx/nginx-rtmp.sh 79b4ad5b23a0a944fab6e11f144b8beb # Provides an unconfigured NGINX server with rtmp-module built in.
 nginx http://jorgen.evens.eu/heroku/nginx/nginx.sh 696aed37bbb258a4bfb1b261fee4c929 # Provides an unconfigured NGINX server.
 nginx-php5 http://jorgen.evens.eu/heroku/nginx-php5/nginx-php5.sh 73e4c8b92018eeffe2525493449272bd # PHP5-FPM integration with NGINX
-nodejs http://jorgen.evens.eu/heroku/nodejs/nodejs.sh bb8f91230e9c022f2ef1cd93600e9d25 # Provides a node installing, including npm
+nodejs http://jorgen.evens.eu/heroku/nodejs/nodejs.sh 1386d7ab6866bb1e24c0c9fa0f234913 # Provides a node installing, including npm
 pcre http://jorgen.evens.eu/heroku/pcre/pcre.sh ff53e4a7185a9897da8aa2b535edbd78 # libpcre 8.33
-php5-fpm-apcu http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-apcu.sh 991a4e1f06eeb50006f6f6ad0b0cc77d
-php5-fpm-curl http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-curl.sh a43c2e30f2507cabf764517c4095d7e7
-php5-fpm-dom http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-dom.sh c4974797cb138e8f591f8e1259735d12
-php5-fpm-gd http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gd.sh 237257d02607033bd2b1552d1153f361
-php5-fpm-gettext http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gettext.sh 96060556cce703879096b8f1fa9e8854
-php5-fpm-iconv http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-iconv.sh d671d69f4226888526250dfb918db5db
-php5-fpm-json http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-json.sh 94ffa76a58be7f9c3ed32b4c1cda9c3c
-php5-fpm-mcrypt http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mcrypt.sh 4b1ed1ad31fa2cf1f96bf4bb0ffbf7f0
-php5-fpm-mysqli http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysqli.sh 20b464262d7cdbf63744b89fd5d9d330
-php5-fpm-mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysql.sh b525d375ce162fddd8f323d71526ff98
-php5-fpm-opcache http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-opcache.sh 62c12ae0a51641031018ef783c81aecd
-php5-fpm-pdo_mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_mysql.sh e5c8e2785f727ac0eb424ddcf196846c
-php5-fpm-pdo http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo.sh 202d8cce64a70037b9ae1a3809de2c04
-php5-fpm-pdo_sqlite http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_sqlite.sh 054ed0e078346ec95f7f21a3cbf48640
-php5-fpm-pgsql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pgsql.sh 0b154d6795ebab811b85b998a7f04469
-php5-fpm http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm.sh ab653b2b2530b51ff2b4276c068b1a0d # PHP5-FPM without any configuration applied
-php5-fpm-soap http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-soap.sh 901206b9fe2f1cc6654208ab7917a197
-php5-fpm-sqlite3 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-sqlite3.sh ffd92155bda69134f646df478341679d
-php5-fpm-tidy http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-tidy.sh 2bdaacbf3218f1a622a0aa33c2f93fd2
-php5-fpm-wddx http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-wddx.sh ad7af2da9fd12b4ae2a67e6613b7d6ea
-php5-fpm-xmlreader http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xmlreader.sh b7b413eeb7f4214a7a8e9e7e4cc02b3d
-php5-fpm-xml http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xml.sh faf9a83ac12463faeb06619c4707f883
-php5-fpm-zip http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-zip.sh 91f2c20953529e8c277449d3326dea1d
-wkhtmltopdf http://jorgen.evens.eu/heroku/wkhtmltopdf/wkhtmltopdf.sh 5181067eee2feda1bb7d409025e90efb # Simple shell utility to convert html to pdf using the webkit rendering engine, and qt
+php5-fpm-apcu http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-apcu.sh 5b0d2992ee4ea58986d99f13996fae26
+php5-fpm-curl http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-curl.sh 4348197ebc5064240d65e5ec887ec3dd
+php5-fpm-dom http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-dom.sh 7da819f988b526dead89e17a1a6b1cca
+php5-fpm-gd http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gd.sh de3448ce2601b9a4129ead09802ddcad
+php5-fpm-gettext http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gettext.sh 7d958f7dddf5853b428a77934827b808
+php5-fpm-iconv http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-iconv.sh cab14dde62b8138c5d5a06ea7649e3aa
+php5-fpm-json http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-json.sh e415c9667e32d1ea41a7c7972fdeb32d
+php5-fpm-mcrypt http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mcrypt.sh 181e4dd8dd262b5333121abe7041f6e0
+php5-fpm-mysqli http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysqli.sh 8fafec63f2258f669d94eeec7b49f8b2
+php5-fpm-mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysql.sh e2bf8d0f033884bf86b54cac14bbac4a
+php5-fpm-opcache http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-opcache.sh dccf6159e03878fed3ae3c8964e55160
+php5-fpm-pdo_mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_mysql.sh 2f8f0c75ea7e8eb5b91552f2c7932ffe
+php5-fpm-pdo http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo.sh 8e66e58426cc1abb6ad4b15525c0c05f
+php5-fpm-pdo_sqlite http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_sqlite.sh 796acbf83a000fc10f785238151ffd44
+php5-fpm-pgsql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pgsql.sh 544c64ab883aa90aa204d10244d8929b
+php5-fpm http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm.sh fc2d947f44aec152269347c7467dd997 # PHP5-FPM without any configuration applied
+php5-fpm-soap http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-soap.sh 35ef69ca94b8ab23bd3d60f445932bed
+php5-fpm-sqlite3 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-sqlite3.sh 45bc84b8a4f029db874cc07dfced127e
+php5-fpm-tidy http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-tidy.sh 6bf64e76a172a40c981140e8876d9e3e
+php5-fpm-wddx http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-wddx.sh ce81fd7dd48ba0e26434cd18cd60f11c
+php5-fpm-xmlreader http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xmlreader.sh 95591650d17ab0cfe7e16258d9061336
+php5-fpm-xml http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xml.sh f9267710486b42c11c085bd3d5fd56f0
+php5-fpm-zip http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-zip.sh c489dc4df3fec1deb2a3f3140e509a5e
+wkhtmltopdf http://jorgen.evens.eu/heroku/wkhtmltopdf/wkhtmltopdf.sh 2abd88ae7cdd0d9068cf1c70346be9fd # Simple shell utility to convert html to pdf using the webkit rendering engine, and qt

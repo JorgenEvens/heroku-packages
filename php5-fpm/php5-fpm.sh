@@ -1,6 +1,6 @@
 #!/bin/sh
 
-PHPFPM_VERSION="5.5.1"
+PHPFPM_VERSION="5.5.2"
 PHPFPM_HOST="http://jorgen.evens.eu/heroku/php5-fpm"
 
 phpfpm_compile() {
