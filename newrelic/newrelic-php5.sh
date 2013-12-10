@@ -50,6 +50,9 @@ newrelic_configure() {
 extension=newrelic.so
 [newrelic]
 newrelic.daemon.location = "/app/vendor/newrelic/daemon"
+newrelic.logfile = "/app/apache/logs/error_log"
+newrelic.daemon.logfile = "/app/vendor/newrelic/error_log"
+newrelic.daemon.port = "/app/vendor/newrelic/.newrelic.sock"
 EOF
 
 	cat >> "${BUILD_DIR}/configure.sh" << EOF
