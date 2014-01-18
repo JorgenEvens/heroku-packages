@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NGINXEXTRAS1_VERSION="1.4.2"
-NGINXEXTRAS1_HOST="http://jorgen.evens.eu/heroku/nginx"
+NGINXEXTRAS1_HOST="$INSTALLER_DIR"
 NGINXEXTRAS1_MD5="7d0def57f94d893061aa945c7c53b008"
 
 nginxextras1_compile() {

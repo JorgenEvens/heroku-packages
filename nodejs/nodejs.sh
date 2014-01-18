@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NODEJS_VERSION="0.10.15"
-NODEJS_HOST="http://jorgen.evens.eu/heroku/nodejs"
+NODEJS_HOST="$INSTALLER_DIR"
 NODEJS_MD5="17006b33e17569c82b4d007ced28b829"
 
 nodejs_compile() {

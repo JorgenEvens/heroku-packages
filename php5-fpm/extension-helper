@@ -1,7 +1,7 @@
 #!/bin/sh
 
 PHP5EXT_VERSION="5.5.2"
-PHP5EXT_HOST="http://jorgen.evens.eu/heroku/php5-fpm"
+PHP5EXT_HOST="$INSTALLER_DIR"
 
 php5ext_compile() {
 	local extension

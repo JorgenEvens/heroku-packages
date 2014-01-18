@@ -1,7 +1,7 @@
 #!/bin/sh
 
 FFMPEG_VERSION="2.0"
-FFMPEG_HOST="http://jorgen.evens.eu/heroku/ffmpeg"
+FFMPEG_HOST="$INSTALLER_DIR"
 
 ffmpeg_compile() {	
 	BINARIES="${CACHE_DIR}/ffmpeg-${FFMPEG_VERSION}.tar.gz"

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 PCRE_VERSION="8.33"
-PCRE_HOST="http://jorgen.evens.eu/heroku/pcre"
+PCRE_HOST="$INSTALLER_DIR"
 
 pcre_compile() {
 	BINARIES="${CACHE_DIR}/pcre-${PCRE_VERSION}.tar.gz"

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NEWRELIC_VERSION="2.5.27"
-NEWRELIC_HOST="http://jorgen.evens.eu/heroku/newrelic"
+NEWRELIC_HOST="$INSTALLER_DIR"
 NEWRELIC_MD5="9b8de8c2319be0abcb1fcdfb5bc036d1"
 
 newrelic_compile() {

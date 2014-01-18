@@ -1,7 +1,7 @@
 #!/bin/sh
 
 IMAGEMAGICK_VERSION="6.8.6"
-IMAGEMAGICK_HOST="https://jorgen.evens.eu/heroku/imagemagick"
+IMAGEMAGICK_HOST="$INSTALLER_DIR"
 IMAGEMAGICK_MD5="bdd636924cf9ca15a65c9aa7bc5a0a35"
 
 imagemagick_compile() {

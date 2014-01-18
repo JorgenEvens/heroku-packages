@@ -1,7 +1,7 @@
 #!/bin/sh
 
 PHPFPM_VERSION="5.5.2"
-PHPFPM_HOST="http://jorgen.evens.eu/heroku/php5-fpm"
+PHPFPM_HOST="${INSTALLER_DIR}"
 
 phpfpm_compile() {
 	dependency_require "pcre"

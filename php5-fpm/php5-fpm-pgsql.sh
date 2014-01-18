@@ -2,7 +2,7 @@
 
 if [ -z "$PHP5_EXT_HELPER" ]; then
 	PHP5_EXT_HELPER="true"
-	download "http://jorgen.evens.eu/heroku/php5-fpm/extension-helper" "${CACHE_DIR}/php5-extension-helper.sh"
+	download "${INSTALLER_DIR}/extension-helper" "${CACHE_DIR}/php5-extension-helper.sh"
 	. "${CACHE_DIR}/php5-extension-helper.sh"
 fi
 

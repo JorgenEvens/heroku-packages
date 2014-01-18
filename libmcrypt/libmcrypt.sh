@@ -1,7 +1,7 @@
 #!/bin/sh
 
 LIBMCRYPT_VERSION="2.5.8"
-LIBMCRYPT_HOST="http://jorgen.evens.eu/heroku/libmcrypt"
+LIBMCRYPT_HOST="$INSTALLER_DIR"
 
 libmcrypt_compile() {
 	BINARIES="${CACHE_DIR}/libmcrypt-${LIBMCRYPT_VERSION}.tar.gz"

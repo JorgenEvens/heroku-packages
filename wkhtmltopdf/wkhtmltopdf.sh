@@ -1,7 +1,7 @@
 #!/bin/sh
 
 WKHTMLTOPDF_VERSION="0.10.0.rc2"
-WKHTMLTOPDF_HOST="http://jorgen.evens.eu/heroku/wkhtmltopdf"
+WKHTMLTOPDF_HOST="${INSTALLER_DIR}"
 
 wkhtmltopdf_compile() {	
 	BINARIES="${CACHE_DIR}/wkhtmltopdf-${WKHTMLTOPDF_VERSION}.tar.gz"

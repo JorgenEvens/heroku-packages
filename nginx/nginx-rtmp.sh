@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NGINXRTMP_VERSION="1.4.2"
-NGINXRTMP_HOST="http://jorgen.evens.eu/heroku/nginx"
+NGINXRTMP_HOST="$INSTALLER_DIR"
 NGINXRTMP_MD5="4ccd4f75ae1421d5e80049e308c5b5e8"
 
 nginxrtmp_compile() {

@@ -1,7 +1,7 @@
 #!/bin/sh
 
 NGINX_VERSION="1.4.2"
-NGINX_HOST="http://jorgen.evens.eu/heroku/nginx"
+NGINX_HOST="$INSTALLER_DIR"
 
 nginx_compile() {
 	VERSION=$NGINX_VERSION

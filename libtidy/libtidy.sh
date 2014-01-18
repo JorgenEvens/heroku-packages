@@ -1,7 +1,7 @@
 #!/bin/sh
 
 LIBTIDY_VERSION="0.99"
-LIBTIDY_HOST="http://jorgen.evens.eu/heroku/libtidy"
+LIBTIDY_HOST="$INSTALLER_DIR"
 
 libtidy_compile() {
 	BINARIES="${CACHE_DIR}/libtidy-${LIBTIDY_VERSION}.tar.gz"
