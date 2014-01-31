@@ -46,7 +46,7 @@ geoip_install() {
 
 geoip_generate_boot() {
 	print_action "Generating environment variables"
-	echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/app/vendor/geoip/lib' >> "${BUILD_DIR}/.profile"
+	echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/app/vendor/geoip/lib"' >> "${BUILD_DIR}/.profile"
 	echo 'export PATH="$PATH:/app/vendor/geoip/bin"' >> "${BUILD_DIR}/.profile"
 }
 

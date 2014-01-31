@@ -46,7 +46,7 @@ luajit_install() {
 
 luajit_generate_boot() {
 	print_action "Generating environment variables"
-	echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/app/vendor/luajit/lib' >> "${BUILD_DIR}/.profile"
+	echo 'export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:/app/vendor/luajit/lib"' >> "${BUILD_DIR}/.profile"
 	echo 'export PATH="$PATH:/app/vendor/luajit/bin"' >> "${BUILD_DIR}/.profile"
 }
 
