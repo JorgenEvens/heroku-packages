@@ -1,0 +1,1 @@
+Provides PhantomJS binary with additional font support
