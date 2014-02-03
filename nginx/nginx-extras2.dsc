@@ -1,4 +1,5 @@
-Provides an unconfigured NGINX server with some extra modules.
+export LUAJIT_LIB="/app/vendor/luajit/lib"
+export LUAJIT_INC="/app/vendor/luajit/include/luajit-2.0"
 
 ./configure
 --with-pcre=/app/pcre-8.33
@@ -28,5 +29,6 @@ Provides an unconfigured NGINX server with some extra modules.
 --add-module=/app/xss-nginx-module
 --add-module=/app/lua-nginx-module-0.9.4
 --add-module=/app/redis2-nginx-module-0.10
+--add-module=/app/nginx-push-stream-module
 --with-cc-opt="-I/app/vendor/geoip/include"
 --with-ld-opt="-L/app/vendor/geoip/lib"
