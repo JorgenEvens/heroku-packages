@@ -9,7 +9,7 @@ newrelic-php5 https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/newrelic/
 nginx-deploy-page https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx-deploy-page/nginx-deploy-page.sh d0bd47c23d526c190f24441d26f17677 # Provides information of the running NGINX instance.
 nginx-php5 https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx-php5/nginx-php5.sh 1a06a41e092383ec9ec3a50de9d07661 # PHP5-FPM integration with NGINX
 nginx-extras1 https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx/nginx-extras1.sh 0971dc7b5b44dd220dec4d6cff3e2bb8 # Provides an unconfigured NGINX server with some extra modules.
-nginx-extras2 https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx/nginx-extras2.sh 5021456ab0bfea0dfa55fe6000cd8198 # Provides an unconfigured NGINX server with some extra modules.
+nginx-extras2 https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx/nginx-extras2.sh a751e33ff3221e5fa8b152ffd67f69e8 # export LUAJIT_LIB="/app/vendor/luajit/lib"
 nginx-rtmp https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx/nginx-rtmp.sh 15f80aacc25f5136077136e45c3f8d09 # Provides an unconfigured NGINX server with rtmp-module built in.
 nginx https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx/nginx.sh ca8af29178d8288b6f4f581d081c3424 # Provides an unconfigured NGINX server.
 nodejs https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nodejs/nodejs.sh a2f6963262e45b446941a9b58fe538ba # Provides a node installing, including npm
