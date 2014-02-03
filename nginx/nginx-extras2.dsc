@@ -1,3 +1,5 @@
+Provides an unconfigured NGINX server with some extra modules.
+
 export LUAJIT_LIB="/app/vendor/luajit/lib"
 export LUAJIT_INC="/app/vendor/luajit/include/luajit-2.0"
 
@@ -24,11 +26,13 @@ export LUAJIT_INC="/app/vendor/luajit/include/luajit-2.0"
 --without-mail_pop3_module
 --without-mail_imap_module
 --without-mail_smtp_module
+--add-module=/app/ngx_devel_kit-0.2.19
 --add-module=/app/ngx_cache_purge-2.1
 --add-module=/app/nginx-static-etags
 --add-module=/app/xss-nginx-module
 --add-module=/app/lua-nginx-module-0.9.4
 --add-module=/app/redis2-nginx-module-0.10
 --add-module=/app/nginx-push-stream-module
+--add-module=/app/set-misc-nginx-module-0.24
 --with-cc-opt="-I/app/vendor/geoip/include"
 --with-ld-opt="-L/app/vendor/geoip/lib"
