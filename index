@@ -1,42 +1,43 @@
-ffmpeg https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/ffmpeg/ffmpeg.sh d5cbb2abd70a04cb8cb07754bf4313af # ./configure
-geoip https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/geoip/geoip.sh 064edb2d52fbe3ac778809ff27e95f93 # Provides MaxMind GeoIP tools and database
-imagemagick https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/imagemagick/imagemagick.sh acbfdf5ae2702960706ddd29f6845e71 # Shell version of imagemagick
-libmcrypt https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/libmcrypt/libmcrypt.sh 7665233e04de5479949d1d618e9e22ae
-libtidy https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/libtidy/libtidy.sh 3f6c8928c9ebd2f3262ff7b402fbdd9b
-luajit https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/luajit/luajit.sh eea56456d1a550a458a9d7ca9225839a # Provides LuaJIT 2.0.2
-mediainfo https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/mediainfo/mediainfo.sh 66d1cbc153e4c08f8b968a72320a2352 # Shell utility to extract information about different kinds of media.
-newrelic-php5 https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/newrelic/newrelic-php5.sh 18b40ca95f00e69c0aca9c64b86f7941 # New Relic server monitoring for PHP5-FPM
-nginx-deploy-page https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx-deploy-page/nginx-deploy-page.sh d0bd47c23d526c190f24441d26f17677 # Provides information of the running NGINX instance.
-nginx-php5 https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx-php5/nginx-php5.sh 1a06a41e092383ec9ec3a50de9d07661 # PHP5-FPM integration with NGINX
-nginx-extras1 https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx/nginx-extras1.sh 0971dc7b5b44dd220dec4d6cff3e2bb8 # Provides an unconfigured NGINX server with some extra modules.
-nginx-extras2 https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx/nginx-extras2.sh a751e33ff3221e5fa8b152ffd67f69e8 # export LUAJIT_LIB="/app/vendor/luajit/lib"
-nginx-rtmp https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx/nginx-rtmp.sh 15f80aacc25f5136077136e45c3f8d09 # Provides an unconfigured NGINX server with rtmp-module built in.
-nginx https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nginx/nginx.sh ca8af29178d8288b6f4f581d081c3424 # Provides an unconfigured NGINX server.
-nodejs https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/nodejs/nodejs.sh a2f6963262e45b446941a9b58fe538ba # Provides a node installing, including npm
-pcre https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/pcre/pcre.sh 15d3afdf628d3d40936644df4fef069d # libpcre 8.33
-phantomjs https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/phantomjs/phantomjs.sh 4d7485f7f9f5dca37f3a899e45ab2a43 # Provides PhantomJS binary with additional font support
-php5-fpm-apcu https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-apcu.sh d17192e64f496ef5069460a8312e3a13
-php5-fpm-cli https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-cli.sh 162ff7735cba7d37aff7cd0962ff5c19
-php5-fpm-curl https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-curl.sh 66d2c8c3459cf4efc1a4e2af2377bf12
-php5-fpm-dom https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-dom.sh 0e15d8c844c22a147401e7187c8ef87d
-php5-fpm-gd https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-gd.sh d1741564a615e0bdf2bd450f610e51a1
-php5-fpm-gettext https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-gettext.sh 614ff8531d5334d5b0e591bcc29fd9d6
-php5-fpm-iconv https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-iconv.sh 8dce18105e00ab84de1e2d6059fe1c9f
-php5-fpm-json https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-json.sh 7505887ec38e5354d6126265cf12a06c
-php5-fpm-mcrypt https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-mcrypt.sh dec412740f945dc25b1ee87e709c0767
-php5-fpm-mysql https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-mysql.sh 8052fdf824f7bb406f8699586fd17ebe
-php5-fpm-mysqli https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-mysqli.sh 4690a0bf38326b3ac45c3e6de6f19494
-php5-fpm-opcache https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-opcache.sh f503c4cc29958d57bfee0e63b05b48d4
-php5-fpm-pdo https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-pdo.sh 6962ea8fc8f44982625fc33f316ed260
-php5-fpm-pdo_mysql https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-pdo_mysql.sh 43654114e7d6c5f33b61f5353d7bccc8
-php5-fpm-pdo_sqlite https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-pdo_sqlite.sh 6e2d5677f8ce0fcab31aeea93c6f9b4a
-php5-fpm-pgsql https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-pgsql.sh c131eeb1c91cb4ac2a55029e2f07118b
-php5-fpm-soap https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-soap.sh 7c66e5b5dc503ef32dca1ec9830fea75
-php5-fpm-sqlite3 https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-sqlite3.sh 2d5aa5f1be1676fc7695b6006ed77e80
-php5-fpm-tidy https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-tidy.sh 6b75c9e710722b2e2293cbf515f3b5af
-php5-fpm-wddx https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-wddx.sh d6b000f7f4f4a05a67e19616c461a001
-php5-fpm-xml https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-xml.sh b21053d7cc1a856f350faf143d8d95da
-php5-fpm-xmlreader https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-xmlreader.sh f17ce4dea72a4bca583d3fd16ddcb321
-php5-fpm-zip https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm-zip.sh 7ee77740fb47e2081e23aa06720ae44f
-php5-fpm https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/php5-fpm/php5-fpm.sh b30cc5cd44ba23e4bd2a43c622a1e3f5 # PHP5-FPM without any configuration applied
-wkhtmltopdf https://s3-eu-west-1.amazonaws.com/bubobox.deploy/heroku/wkhtmltopdf/wkhtmltopdf.sh af051e8e0a3ddbf4fab3dd283c103d71 # Simple shell utility to convert html to pdf using the webkit rendering engine, and qt
+ffmpeg http://jorgen.evens.eu/heroku/ffmpeg/ffmpeg.sh d5cbb2abd70a04cb8cb07754bf4313af # ./configure
+geoip http://jorgen.evens.eu/heroku/geoip/geoip.sh 064edb2d52fbe3ac778809ff27e95f93 # Provides MaxMind GeoIP tools and database
+imagemagick http://jorgen.evens.eu/heroku/imagemagick/imagemagick.sh acbfdf5ae2702960706ddd29f6845e71 # Shell version of imagemagick
+libmcrypt http://jorgen.evens.eu/heroku/libmcrypt/libmcrypt.sh 7665233e04de5479949d1d618e9e22ae
+libtidy http://jorgen.evens.eu/heroku/libtidy/libtidy.sh 3f6c8928c9ebd2f3262ff7b402fbdd9b
+luajit http://jorgen.evens.eu/heroku/luajit/luajit.sh eea56456d1a550a458a9d7ca9225839a # Provides LuaJIT 2.0.2
+mediainfo http://jorgen.evens.eu/heroku/mediainfo/mediainfo.sh 66d1cbc153e4c08f8b968a72320a2352 # Shell utility to extract information about different kinds of media.
+newrelic-php5 http://jorgen.evens.eu/heroku/newrelic/newrelic-php5.sh 18b40ca95f00e69c0aca9c64b86f7941 # New Relic server monitoring for PHP5-FPM
+nginx-deploy-page http://jorgen.evens.eu/heroku/nginx-deploy-page/nginx-deploy-page.sh d0bd47c23d526c190f24441d26f17677 # Provides information of the running NGINX instance.
+nginx-php5 http://jorgen.evens.eu/heroku/nginx-php5/nginx-php5.sh 1a06a41e092383ec9ec3a50de9d07661 # PHP5-FPM integration with NGINX
+nginx-extras1 http://jorgen.evens.eu/heroku/nginx/nginx-extras1.sh 0971dc7b5b44dd220dec4d6cff3e2bb8 # Provides an unconfigured NGINX server with some extra modules.
+nginx-extras2 http://jorgen.evens.eu/heroku/nginx/nginx-extras2.sh 4401c7246f3a18f9ac72636919dbeea8 # Provides an unconfigured NGINX server with some extra modules.
+nginx-rtmp http://jorgen.evens.eu/heroku/nginx/nginx-rtmp.sh 15f80aacc25f5136077136e45c3f8d09 # Provides an unconfigured NGINX server with rtmp-module built in.
+nginx http://jorgen.evens.eu/heroku/nginx/nginx.sh ca8af29178d8288b6f4f581d081c3424 # Provides an unconfigured NGINX server.
+nodejs http://jorgen.evens.eu/heroku/nodejs/nodejs.sh a2f6963262e45b446941a9b58fe538ba # Provides a node installing, including npm
+pcre http://jorgen.evens.eu/heroku/pcre/pcre.sh 15d3afdf628d3d40936644df4fef069d # libpcre 8.33
+phantomjs http://jorgen.evens.eu/heroku/phantomjs/phantomjs.sh 4d7485f7f9f5dca37f3a899e45ab2a43 # Provides PhantomJS binary with additional font support
+php5-fpm-apcu http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-apcu.sh d17192e64f496ef5069460a8312e3a13
+php5-fpm-cli http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-cli.sh 162ff7735cba7d37aff7cd0962ff5c19
+php5-fpm-curl http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-curl.sh 66d2c8c3459cf4efc1a4e2af2377bf12
+php5-fpm-dom http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-dom.sh 0e15d8c844c22a147401e7187c8ef87d
+php5-fpm-gd http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gd.sh d1741564a615e0bdf2bd450f610e51a1
+php5-fpm-gettext http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gettext.sh 614ff8531d5334d5b0e591bcc29fd9d6
+php5-fpm-iconv http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-iconv.sh 8dce18105e00ab84de1e2d6059fe1c9f
+php5-fpm-json http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-json.sh 7505887ec38e5354d6126265cf12a06c
+php5-fpm-mcrypt http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mcrypt.sh dec412740f945dc25b1ee87e709c0767
+php5-fpm-mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysql.sh 8052fdf824f7bb406f8699586fd17ebe
+php5-fpm-mysqli http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysqli.sh 4690a0bf38326b3ac45c3e6de6f19494
+php5-fpm-opcache http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-opcache.sh f503c4cc29958d57bfee0e63b05b48d4
+php5-fpm-pdo http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo.sh 6962ea8fc8f44982625fc33f316ed260
+php5-fpm-pdo_mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_mysql.sh 43654114e7d6c5f33b61f5353d7bccc8
+php5-fpm-pdo_sqlite http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_sqlite.sh 6e2d5677f8ce0fcab31aeea93c6f9b4a
+php5-fpm-pgsql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pgsql.sh c131eeb1c91cb4ac2a55029e2f07118b
+php5-fpm-redis http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-redis.sh 3f34a381c896b330fd55b4fbe4938815
+php5-fpm-soap http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-soap.sh 7c66e5b5dc503ef32dca1ec9830fea75
+php5-fpm-sqlite3 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-sqlite3.sh 2d5aa5f1be1676fc7695b6006ed77e80
+php5-fpm-tidy http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-tidy.sh 6b75c9e710722b2e2293cbf515f3b5af
+php5-fpm-wddx http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-wddx.sh d6b000f7f4f4a05a67e19616c461a001
+php5-fpm-xml http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xml.sh b21053d7cc1a856f350faf143d8d95da
+php5-fpm-xmlreader http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xmlreader.sh f17ce4dea72a4bca583d3fd16ddcb321
+php5-fpm-zip http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-zip.sh 7ee77740fb47e2081e23aa06720ae44f
+php5-fpm http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm.sh b30cc5cd44ba23e4bd2a43c622a1e3f5 # PHP5-FPM without any configuration applied
+wkhtmltopdf http://jorgen.evens.eu/heroku/wkhtmltopdf/wkhtmltopdf.sh af051e8e0a3ddbf4fab3dd283c103d71 # Simple shell utility to convert html to pdf using the webkit rendering engine, and qt
