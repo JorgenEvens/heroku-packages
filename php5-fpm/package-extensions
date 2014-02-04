@@ -1,0 +1,19 @@
+#!/bin/sh
+
+if [ ! -d ext-base ]; then
+	mkdir -p ext-base/lib/php/20121212
+fi
+
+for line in `ls extensions | grep -o '[^\.]\+\.' | sort | uniq | tr -d '.'`; do
+echo "Packaging ${line}"
+cp -R ext-base ${line}
+cp extensions/${line}.* ${line}/lib/php/20121212
+mkdir tmp 2> /dev/null
+mv ${line} tmp/
+cd tmp
+mv ${line} php5-fpm
+tar -caf php5-fpm-${line}-5.5.2.tar.gz php5-fpm
+mv *.tar.gz ..
+cd ..
+rm -R tmp
+done;
