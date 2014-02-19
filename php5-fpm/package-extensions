@@ -12,7 +12,7 @@ mkdir tmp 2> /dev/null
 mv ${line} tmp/
 cd tmp
 mv ${line} php5-fpm
-tar -caf php5-fpm-${line}-5.5.2.tar.gz php5-fpm
+tar -cf php5-fpm-${line}-5.5.2.tar.gz php5-fpm
 mv *.tar.gz ..
 cd ..
 rm -R tmp
