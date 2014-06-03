@@ -1,8 +1,8 @@
 #!/bin/sh
 
-NODEJS_VERSION="0.10.26"
+NODEJS_VERSION="0.10.28"
 NODEJS_HOST="$INSTALLER_DIR"
-NODEJS_MD5="a424454df9d247fef3e4ded93bd67c93"
+NODEJS_MD5="abf6b099f2d7a36526eecc2f8c8d6027"
 
 nodejs_compile() {
 	VERSION=$NODEJS_VERSION
@@ -18,18 +18,18 @@ nodejs_download() {
 	HOST=$NODEJS_HOST
 	URL="${HOST}/$(basename $TARGET)"
 
-	print_action "Downloading Nginx ${NODEJS_VERSION} from ${URL} to ${TARGET}"
+	print_action "Downloading NodeJS ${NODEJS_VERSION} from ${URL} to ${TARGET}"
 	cached_download "$URL" "$TARGET" "${NODEJS_MD5}"
 }
 
 nodejs_install() {
-	print_action "Installing Nginx ${NODEJS_VERSION} to ${BUILD_DIR}/vendor"
+	print_action "Installing NodeJS ${NODEJS_VERSION} to ${BUILD_DIR}/vendor"
 
 	mkdir -p "${BUILD_DIR}/vendor"
 
 	CUR_DIR=`pwd`
 
-	# Extract Nginx
+	# Extract NodeJS
 	cd "${BUILD_DIR}/vendor"
 	rm -R nodejs 2> /dev/null
 	tar -xf "${BINARIES}"
