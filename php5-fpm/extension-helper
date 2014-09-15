@@ -50,5 +50,11 @@ php5ext_enable() {
 	if [ ! -f "$config" ]; then 
 		echo "[PHP]" >> "$config"
 	fi
-	echo "extension=$1.so" >> "$config"
+
+	if [ $1 = "xdebug" ]; then
+		echo "zend_extension=$1.so" >> "$config"
+	else
+		echo "extension=$1.so" >> "$config"
+	fi
+
 }
