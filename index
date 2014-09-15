@@ -5,14 +5,15 @@ libmcrypt http://jorgen.evens.eu/heroku/libmcrypt/libmcrypt.sh 7665233e04de54799
 libtidy http://jorgen.evens.eu/heroku/libtidy/libtidy.sh 3f6c8928c9ebd2f3262ff7b402fbdd9b
 luajit http://jorgen.evens.eu/heroku/luajit/luajit.sh eea56456d1a550a458a9d7ca9225839a # Provides LuaJIT 2.0.2
 mediainfo http://jorgen.evens.eu/heroku/mediainfo/mediainfo.sh 66d1cbc153e4c08f8b968a72320a2352 # Shell utility to extract information about different kinds of media.
-newrelic-php5 http://jorgen.evens.eu/heroku/newrelic/newrelic-php5.sh 18b40ca95f00e69c0aca9c64b86f7941 # New Relic server monitoring for PHP5-FPM
+newrelic-php5 http://jorgen.evens.eu/heroku/newrelic/newrelic-php5.sh 7ce90d45d36e89f6b1e0d697d6c4f7ff # New Relic server monitoring for PHP5-FPM
+newrelic-sysmond http://jorgen.evens.eu/heroku/newrelic/newrelic-sysmond.sh f68af0a59bc6923eb71c72b7aaadb3fb
 nginx-deploy-page http://jorgen.evens.eu/heroku/nginx-deploy-page/nginx-deploy-page.sh d0bd47c23d526c190f24441d26f17677 # Provides information of the running NGINX instance.
 nginx-php5 http://jorgen.evens.eu/heroku/nginx-php5/nginx-php5.sh 1a06a41e092383ec9ec3a50de9d07661 # PHP5-FPM integration with NGINX
 nginx-extras1 http://jorgen.evens.eu/heroku/nginx/nginx-extras1.sh 0971dc7b5b44dd220dec4d6cff3e2bb8 # Provides an unconfigured NGINX server with some extra modules.
 nginx-extras2 http://jorgen.evens.eu/heroku/nginx/nginx-extras2.sh 4401c7246f3a18f9ac72636919dbeea8 # Provides an unconfigured NGINX server with some extra modules.
 nginx-rtmp http://jorgen.evens.eu/heroku/nginx/nginx-rtmp.sh 15f80aacc25f5136077136e45c3f8d09 # Provides an unconfigured NGINX server with rtmp-module built in.
 nginx http://jorgen.evens.eu/heroku/nginx/nginx.sh ca8af29178d8288b6f4f581d081c3424 # Provides an unconfigured NGINX server.
-nodejs http://jorgen.evens.eu/heroku/nodejs/nodejs.sh a2f6963262e45b446941a9b58fe538ba # Provides a node installing, including npm
+nodejs http://jorgen.evens.eu/heroku/nodejs/nodejs.sh 4d650ed131c634b6b417cddc3f1b5018 # Provides a node installing, including npm
 pcre http://jorgen.evens.eu/heroku/pcre/pcre.sh 15d3afdf628d3d40936644df4fef069d # libpcre 8.33
 phantomjs http://jorgen.evens.eu/heroku/phantomjs/phantomjs.sh 4d7485f7f9f5dca37f3a899e45ab2a43 # Provides PhantomJS binary with additional font support
 php5-fpm-apcu http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-apcu.sh d17192e64f496ef5069460a8312e3a13
@@ -36,6 +37,7 @@ php5-fpm-soap http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-soap.sh 7c66e5b5dc
 php5-fpm-sqlite3 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-sqlite3.sh 2d5aa5f1be1676fc7695b6006ed77e80
 php5-fpm-tidy http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-tidy.sh 6b75c9e710722b2e2293cbf515f3b5af
 php5-fpm-wddx http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-wddx.sh d6b000f7f4f4a05a67e19616c461a001
+php5-fpm-xdebug http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xdebug.sh ede24e878dde04cfbf4124dc7da9b82c
 php5-fpm-xml http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xml.sh b21053d7cc1a856f350faf143d8d95da
 php5-fpm-xmlreader http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xmlreader.sh f17ce4dea72a4bca583d3fd16ddcb321
 php5-fpm-zip http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-zip.sh 7ee77740fb47e2081e23aa06720ae44f
