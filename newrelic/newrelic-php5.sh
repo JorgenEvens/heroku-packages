@@ -33,7 +33,6 @@ newrelic_install() {
 
 	# Extract New Relic
 	cd "${BUILD_DIR}/vendor"
-	rm -R newrelic 2> /dev/null
 	tar -xf "${BINARIES}"
 
 	# Return to original directory
