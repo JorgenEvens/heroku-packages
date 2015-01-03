@@ -5,11 +5,21 @@ if [ ! -z $1 ]; then
 	HOST="$1"
 fi
 
+md5sum() {
+	if [ ! -z "`which md5sum`" ]; then
+		# Linux
+		`which md5sum` $@ | cut -d" " -f1
+	elif [ ! -z "`which md5`" ]; then
+		# OSX
+		`which md5` -q $@
+	fi
+}
+
 for package in `ls */*.sh`; do
 	installer=$(basename "$package")
 	dir=$(basename $(dirname "$package"))
 	name=$(echo $installer | sed 's/\.sh$//g')
-	md5=$(md5sum "$package" | cut -d" " -f1)
+	md5=$(md5sum "$package")
 
 	line="$name ${HOST}/${dir}/${installer} ${md5}"
 	if [ -f "$dir/$name.dsc" ]; then

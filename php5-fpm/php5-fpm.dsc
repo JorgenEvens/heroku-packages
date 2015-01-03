@@ -69,23 +69,48 @@ These configure options were used:
 --enable-dom=shared
 --enable-xmlreader=shared
 
-use following snippet to generate .tar.gz archives from the files in extensions
+Use following script to package up php extensions
 
-for line in `ls extensions | grep -o '[^\.]\+\.' | sort | uniq | tr -d '.'`; do
-cp -R ext-base ${line}
-cp extensions/${line}.* ${line}/lib/php/20121212
-mkdir tmp 2> /dev/null
-mv ${line} tmp/
-cd tmp
-mv ${line} php5-fpm
-tar -caf php5-fpm-${line}-5.5.2.tar.gz php5-fpm
-mv *.tar.gz ..
-cd ..
-rm -R tmp
-done;
+#!/bin/sh
 
-use following snippet to generate shell scripts from tar.gz extensions
+PHP_VERSION="5.5.2"
+PHP_API="20121212"
 
-for line in `ls *.tar.gz | cut -d"-" -f3`; do
-sed "s/ext_placeholder/$line/g" extension_template > php5-fpm-$line.sh
+EXT_SRC="php5-fpm/lib/php/$PHP_API"
+EXT_DIR="lib/php/$PHP_API"
+WORK_DIR="tmp/php5-fpm"
+CUR_DIR="`pwd`"
+
+for pkg in `ls $EXT_SRC | grep -o '[^\.]\+\.' | sort | uniq | tr -d '.'`; do
+	echo "Packaging ${pkg}"
+
+	package="php5-fpm-${pkg}-${PHP_VERSION}"
+
+	mkdir -p "${WORK_DIR}/${EXT_DIR}"
+	cp $EXT_SRC/${pkg}.* "${WORK_DIR}/${EXT_DIR}"
+
+	cd "`dirname ${WORK_DIR}`"
+	tar -c php5-fpm | gzip > "${package}.tar.gz"
+
+	mv "${package}.tar.gz" "$CUR_DIR"
+	cd "$CUR_DIR"
+
+	MD5=$(md5sum ${package}.tar.gz | cut -d" " -f1)
+
+	cat > "${package}.sh" << EOF
+#!/bin/sh
+
+PHP5EXT_VERSION="$PHP_VERSION"
+PHP5EXT_MD5="$MD5"
+PHP5EXT_NAME="${pkg}"
+PHP5EXT_BIN="php5-fpm-\${PHP5EXT_NAME}-\${PHP5EXT_VERSION}.tar.gz"
+
+dependency_require "php5-fpm"
+dependency_require "php\$PHP5EXT_VERSION"
+
+unpack "\${INSTALLER_DIR}/\${PHP5EXT_BIN}" "\$PHP5EXT_MD5"
+php5_ext_enable "\$PHP5EXT_NAME"
+EOF
+
+	rm -Rf ${WORK_DIR}
 done

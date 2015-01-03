@@ -1,54 +1,32 @@
 #!/bin/sh
 
 PHPFPM_VERSION="5.5.2"
-PHPFPM_HOST="${INSTALLER_DIR}"
+PHPFPM_MD5=""
+PHPFPM_BIN="php5-fpm-${PHPFPM_VERSION}.tar.gz"
 
-phpfpm_compile() {
-	dependency_require "pcre"
-	dependency_require "libtidy"
-	dependency_require "libmcrypt"
-	
-	BINARIES="${CACHE_DIR}/php5-fpm-${PHPFPM_VERSION}.tar.gz"
+dependency_require "pcre"
+dependency_require "libtidy"
+dependency_require "libmcrypt"
 
-	phpfpm_download "${BINARIES}"
-	phpfpm_install "${BINARIES}"
-	phpfpm_generate_boot
-}
+unpack "${INSTALLER_DIR}/${PHPFPM_BIN}" "PHPFPM_MD5"
 
-phpfpm_download() {
-	TARGET=$1
-	HOST=$PHPFPM_HOST
-	URL="${HOST}/$(basename $TARGET)"
+print_action "Generating boot portion for PHP5-FPM"
+echo "/app/vendor/php5-fpm/sbin/php-fpm &" >> "${BUILD_DIR}/boot.sh"
 
-	print_action "Checking cache for $TARGET"
-	if [ ! -f "$TARGET" ]; then
-		print_action "Downloading PHP5-FPM ${PHPFPM_VERSION} from ${URL} to ${TARGET}"
-		download "${URL}" "${TARGET}"
+dependency_mark "php$PHPFPM_VERSION"
+
+php5_ext_enable() {
+	local config
+	local extension
+	local ext_type
+
+	extension="$1"
+	ext_type="$2"
+
+	config="${BUILD_DIR}/vendor/php5-fpm/etc/php.ini"
+
+	if [ ! -f "$config" ]; then 
+		echo "[PHP]" >> "$config"
 	fi
-	if [ ! -f "$TARGET" ]; then
-		print "Unable to download the package"
-		exit !
-	fi
+	echo "${ext_type}extension=${extension}.so" >> "$config"
 }
-
-phpfpm_install() {
-	print_action "Installing PHP5-FPM ${PHPFPM_VERSION} to ${BUILD_DIR}/vendor"
-
-	mkdir -p "${BUILD_DIR}/vendor"
-
-	CUR_DIR=`pwd`
-
-	cd "${BUILD_DIR}/vendor"
-	rm -R php5-fpm 2> /dev/null
-
-	tar -xf "${BINARIES}"
-
-	cd "${CUR_DIR}"
-}
-
-phpfpm_generate_boot() {
-	print_action "Generating boot portion for PHP5-FPM"
-	echo "/app/vendor/php5-fpm/sbin/php-fpm &" >> "${BUILD_DIR}/boot.sh"
-}
-
-phpfpm_compile

@@ -6,40 +6,62 @@ libtidy http://jorgen.evens.eu/heroku/libtidy/libtidy.sh 3f6c8928c9ebd2f3262ff7b
 luajit http://jorgen.evens.eu/heroku/luajit/luajit.sh eea56456d1a550a458a9d7ca9225839a # Provides LuaJIT 2.0.2
 mediainfo http://jorgen.evens.eu/heroku/mediainfo/mediainfo.sh 66d1cbc153e4c08f8b968a72320a2352 # Shell utility to extract information about different kinds of media.
 newrelic-php5 http://jorgen.evens.eu/heroku/newrelic/newrelic-php5.sh 7ce90d45d36e89f6b1e0d697d6c4f7ff # New Relic server monitoring for PHP5-FPM
-newrelic-sysmond http://jorgen.evens.eu/heroku/newrelic/newrelic-sysmond.sh f68af0a59bc6923eb71c72b7aaadb3fb
 nginx-deploy-page http://jorgen.evens.eu/heroku/nginx-deploy-page/nginx-deploy-page.sh d0bd47c23d526c190f24441d26f17677 # Provides information of the running NGINX instance.
 nginx-php5 http://jorgen.evens.eu/heroku/nginx-php5/nginx-php5.sh 1a06a41e092383ec9ec3a50de9d07661 # PHP5-FPM integration with NGINX
 nginx-extras1 http://jorgen.evens.eu/heroku/nginx/nginx-extras1.sh 0971dc7b5b44dd220dec4d6cff3e2bb8 # Provides an unconfigured NGINX server with some extra modules.
 nginx-extras2 http://jorgen.evens.eu/heroku/nginx/nginx-extras2.sh 4401c7246f3a18f9ac72636919dbeea8 # Provides an unconfigured NGINX server with some extra modules.
 nginx-rtmp http://jorgen.evens.eu/heroku/nginx/nginx-rtmp.sh 15f80aacc25f5136077136e45c3f8d09 # Provides an unconfigured NGINX server with rtmp-module built in.
 nginx http://jorgen.evens.eu/heroku/nginx/nginx.sh ca8af29178d8288b6f4f581d081c3424 # Provides an unconfigured NGINX server.
-nodejs http://jorgen.evens.eu/heroku/nodejs/nodejs.sh 4d650ed131c634b6b417cddc3f1b5018 # Provides a node installing, including npm
+nodejs http://jorgen.evens.eu/heroku/nodejs/nodejs.sh 2abada06181dce1a8e8f269d2913dfde # Provides a node installing, including npm
 pcre http://jorgen.evens.eu/heroku/pcre/pcre.sh 15d3afdf628d3d40936644df4fef069d # libpcre 8.33
 phantomjs http://jorgen.evens.eu/heroku/phantomjs/phantomjs.sh 4d7485f7f9f5dca37f3a899e45ab2a43 # Provides PhantomJS binary with additional font support
+build-php5 http://jorgen.evens.eu/heroku/php5-fpm/build-php5.sh e81b25f2582c3736d7b5adc9a2c4fef3
+php5-fpm-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-5.5.18.sh 180113af659a27b46f0bad8151f8646f
 php5-fpm-apcu http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-apcu.sh d17192e64f496ef5069460a8312e3a13
 php5-fpm-cli http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-cli.sh 162ff7735cba7d37aff7cd0962ff5c19
+php5-fpm-curl-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-curl-5.5.18.sh fce47e5880addafd9b6bb2286fde9010
 php5-fpm-curl http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-curl.sh 66d2c8c3459cf4efc1a4e2af2377bf12
+php5-fpm-dom-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-dom-5.5.18.sh f53c8ed2d97730952e6d979cbd2f0421
 php5-fpm-dom http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-dom.sh 0e15d8c844c22a147401e7187c8ef87d
+php5-fpm-gd-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gd-5.5.18.sh f8df903660b29938cf140ce777f30260
 php5-fpm-gd http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gd.sh d1741564a615e0bdf2bd450f610e51a1
+php5-fpm-gettext-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gettext-5.5.18.sh 16a3b85d32b768d2fd07e8589370f146
 php5-fpm-gettext http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-gettext.sh 614ff8531d5334d5b0e591bcc29fd9d6
+php5-fpm-iconv-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-iconv-5.5.18.sh 14d7599e7606a87256da26975954c940
 php5-fpm-iconv http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-iconv.sh 8dce18105e00ab84de1e2d6059fe1c9f
+php5-fpm-json-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-json-5.5.18.sh 9e3659472e96e77972da82d778ededd2
 php5-fpm-json http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-json.sh 7505887ec38e5354d6126265cf12a06c
+php5-fpm-mcrypt-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mcrypt-5.5.18.sh 4be5d3e201ce060350ece1edaf2f81a1
 php5-fpm-mcrypt http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mcrypt.sh dec412740f945dc25b1ee87e709c0767
+php5-fpm-mysql-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysql-5.5.18.sh 48168525d24a11ae5e7c2b7c06609caa
 php5-fpm-mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysql.sh 8052fdf824f7bb406f8699586fd17ebe
+php5-fpm-mysqli-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysqli-5.5.18.sh ee188dbbdd8e77058c8fa49609483a69
 php5-fpm-mysqli http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysqli.sh 4690a0bf38326b3ac45c3e6de6f19494
+php5-fpm-opcache-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-opcache-5.5.18.sh 78ecea7eca65bfceb25a93a455547ca4
 php5-fpm-opcache http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-opcache.sh f503c4cc29958d57bfee0e63b05b48d4
+php5-fpm-pdo-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo-5.5.18.sh b1f8d472940332d1be8834ce0687a3f8
 php5-fpm-pdo http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo.sh 6962ea8fc8f44982625fc33f316ed260
+php5-fpm-pdo_mysql-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_mysql-5.5.18.sh c6044e93f403894d2fdbfc8b7a00a6a4
 php5-fpm-pdo_mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_mysql.sh 43654114e7d6c5f33b61f5353d7bccc8
+php5-fpm-pdo_sqlite-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_sqlite-5.5.18.sh 930910037aeab86a07211763116c3792
 php5-fpm-pdo_sqlite http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pdo_sqlite.sh 6e2d5677f8ce0fcab31aeea93c6f9b4a
+php5-fpm-pgsql-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pgsql-5.5.18.sh fe480b931a2aa3f2bf2fd4524d2859eb
 php5-fpm-pgsql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-pgsql.sh c131eeb1c91cb4ac2a55029e2f07118b
 php5-fpm-redis http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-redis.sh 3f34a381c896b330fd55b4fbe4938815
+php5-fpm-soap-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-soap-5.5.18.sh bf3a521cfe160b8f59ac44532ca22747
 php5-fpm-soap http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-soap.sh 7c66e5b5dc503ef32dca1ec9830fea75
+php5-fpm-sqlite3-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-sqlite3-5.5.18.sh da966fb1e3e54a0f6a127f3674efa324
 php5-fpm-sqlite3 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-sqlite3.sh 2d5aa5f1be1676fc7695b6006ed77e80
+php5-fpm-tidy-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-tidy-5.5.18.sh be241f0ea008ec5ca7e4dd4b45e8bac5
 php5-fpm-tidy http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-tidy.sh 6b75c9e710722b2e2293cbf515f3b5af
+php5-fpm-wddx-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-wddx-5.5.18.sh a29cfeede2a7c4174f6068066ce807f0
 php5-fpm-wddx http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-wddx.sh d6b000f7f4f4a05a67e19616c461a001
 php5-fpm-xdebug http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xdebug.sh ede24e878dde04cfbf4124dc7da9b82c
+php5-fpm-xml-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xml-5.5.18.sh 4256ea79fd6b3e490608ca16e1345899
 php5-fpm-xml http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xml.sh b21053d7cc1a856f350faf143d8d95da
+php5-fpm-xmlreader-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xmlreader-5.5.18.sh b295bf89d227a8d449efd975f9a5e0bf
 php5-fpm-xmlreader http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-xmlreader.sh f17ce4dea72a4bca583d3fd16ddcb321
+php5-fpm-zip-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-zip-5.5.18.sh f267d4526b13980d7cb01cf499d4ea47
 php5-fpm-zip http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-zip.sh 7ee77740fb47e2081e23aa06720ae44f
-php5-fpm http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm.sh b30cc5cd44ba23e4bd2a43c622a1e3f5 # PHP5-FPM without any configuration applied
+php5-fpm http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm.sh 11750c3c966d27a65931904a1f738ffd # PHP5-FPM without any configuration applied
 wkhtmltopdf http://jorgen.evens.eu/heroku/wkhtmltopdf/wkhtmltopdf.sh af051e8e0a3ddbf4fab3dd283c103d71 # Simple shell utility to convert html to pdf using the webkit rendering engine, and qt
