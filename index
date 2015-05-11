@@ -12,11 +12,13 @@ nginx-extras1 http://jorgen.evens.eu/heroku/nginx/nginx-extras1.sh 0971dc7b5b44d
 nginx-extras2 http://jorgen.evens.eu/heroku/nginx/nginx-extras2.sh 4401c7246f3a18f9ac72636919dbeea8 # Provides an unconfigured NGINX server with some extra modules.
 nginx-rtmp http://jorgen.evens.eu/heroku/nginx/nginx-rtmp.sh 15f80aacc25f5136077136e45c3f8d09 # Provides an unconfigured NGINX server with rtmp-module built in.
 nginx http://jorgen.evens.eu/heroku/nginx/nginx.sh ca8af29178d8288b6f4f581d081c3424 # Provides an unconfigured NGINX server.
-nodejs http://jorgen.evens.eu/heroku/nodejs/nodejs.sh 2abada06181dce1a8e8f269d2913dfde # Provides a node installing, including npm
+nodejs-0.10.28 http://jorgen.evens.eu/heroku/nodejs/nodejs-0.10.28.sh d15bd2f8a0fe0431a6e3cded39a6a99f
+nodejs-0.12.2 http://jorgen.evens.eu/heroku/nodejs/nodejs-0.12.2.sh 4d893033155f1a4b72e384bb5326efa0
+nodejs http://jorgen.evens.eu/heroku/nodejs/nodejs.sh a4928bc712e45ca7d26b4fe8913b8a3a # Provides a node installing, including npm
 pcre http://jorgen.evens.eu/heroku/pcre/pcre.sh 15d3afdf628d3d40936644df4fef069d # libpcre 8.33
 phantomjs http://jorgen.evens.eu/heroku/phantomjs/phantomjs.sh 4d7485f7f9f5dca37f3a899e45ab2a43 # Provides PhantomJS binary with additional font support
 build-php5 http://jorgen.evens.eu/heroku/php5-fpm/build-php5.sh e81b25f2582c3736d7b5adc9a2c4fef3
-php5-fpm-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-5.5.18.sh 180113af659a27b46f0bad8151f8646f
+php5-fpm-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-5.5.18.sh d688b5e93fd2066a145cf4b51a264398
 php5-fpm-apcu http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-apcu.sh d17192e64f496ef5069460a8312e3a13
 php5-fpm-cli http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-cli.sh 162ff7735cba7d37aff7cd0962ff5c19
 php5-fpm-curl-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-curl-5.5.18.sh fce47e5880addafd9b6bb2286fde9010
@@ -33,6 +35,7 @@ php5-fpm-json-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-json-5.5.18
 php5-fpm-json http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-json.sh 7505887ec38e5354d6126265cf12a06c
 php5-fpm-mcrypt-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mcrypt-5.5.18.sh 4be5d3e201ce060350ece1edaf2f81a1
 php5-fpm-mcrypt http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mcrypt.sh dec412740f945dc25b1ee87e709c0767
+php5-fpm-mongo http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mongo.sh d746613fa049f1f2a97e64c2a97cf333
 php5-fpm-mysql-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysql-5.5.18.sh 48168525d24a11ae5e7c2b7c06609caa
 php5-fpm-mysql http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysql.sh 8052fdf824f7bb406f8699586fd17ebe
 php5-fpm-mysqli-5.5.18 http://jorgen.evens.eu/heroku/php5-fpm/php5-fpm-mysqli-5.5.18.sh ee188dbbdd8e77058c8fa49609483a69
